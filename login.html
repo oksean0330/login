@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>로그인</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/login.css" rel="stylesheet">
+  <script language="JavaScript">
+    function Check(){
+      if(document.loginverify.StudentID.value =="21104" && document.loginverify.phonenumber.value =="2834"){
+        window.location.herf() = 'http://oksean0330.github.io/researches'}
+      else if(document.loginverify.StudentID.value =="21212" && document.loginverify.phonenumber.value =="2760"){
+        window.location.herf() = 'http://oksean0330.github.io/researches'}
+      else if(document.loginverify.StudentID.value =="21325" && document.loginverify.phonenumber.value =="3605"){
+        window.location.herf() = 'http://oksean0330.github.io/researches'}
+      else{
+        alert("해당하는 데이터가 없습니다.");
+        window.location.href = 'http://oksean0330.github.io/login';
+      }
+  
+    }
+  
+    </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">로그인</h5>
+            <form name="loginverify">
+              <div class="form-label-group">
+                <input type="number" id="inputStudentID" class="form-control" placeholder="학번" name="StudentID" required autofocus>
+                <label for="inputStudentID">학번</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="전화번호 뒷번호 4자리" name="phonenumber" required>
+                <label for="inputPassword">전화번호 뒷번호 4자리</label>
+              </div>
+              <input type="button" class="btn btn-lg btn-primary btn-block text-uppercase" value="LOGIN" onclick="Check()">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
